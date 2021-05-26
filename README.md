@@ -3,7 +3,7 @@ About r-rnexml
 
 Home: https://docs.ropensci.org/RNeXML, https://github.com/ropensci/RNeXML
 
-Package license: BSD_3_clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rnexml-feedstock/blob/master/LICENSE.txt)
 
