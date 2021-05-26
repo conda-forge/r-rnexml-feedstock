@@ -59,7 +59,7 @@ test:
 
 about:
   home: https://docs.ropensci.org/RNeXML, https://github.com/ropensci/RNeXML
-  license: BSD_3_clause
+  license: BSD-3-Clause
   summary: Provides access to phyloinformatic data in 'NeXML' format.  The package should add new functionality to R such as the possibility to manipulate 'NeXML' objects in more various and refined way and compatibility with 'ape' objects.
   license_family: BSD
   license_file:
