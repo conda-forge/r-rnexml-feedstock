@@ -1,4 +1,4 @@
-{% set version = "2.4.5" %}
+{% set version = "2.4.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RNeXML_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RNeXML/RNeXML_{{ version }}.tar.gz
-  sha256: 2b667ecb6400e4c0c125ca73a98cde81330cde3a85b764261f77159e702754f3
+  sha256: 9a1db4424bf86170311aaf1c00f099442d9e1592afb007cbe8bb02f4585ea64c
 
 build:
   merge_build_host: true  # [win]
@@ -23,6 +23,7 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-xml >=3.95
@@ -32,6 +33,7 @@ requirements:
     - r-lazyeval >=0.1.0
     - r-plyr >=1.8
     - r-reshape2 >=1.2.2
+    - r-rlang
     - r-stringi
     - r-stringr >=1.0
     - r-tidyr >=0.3.1
@@ -46,6 +48,7 @@ requirements:
     - r-lazyeval >=0.1.0
     - r-plyr >=1.8
     - r-reshape2 >=1.2.2
+    - r-rlang
     - r-stringi
     - r-stringr >=1.0
     - r-tidyr >=0.3.1
