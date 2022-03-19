@@ -23,6 +23,7 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-xml >=3.95
@@ -32,6 +33,7 @@ requirements:
     - r-lazyeval >=0.1.0
     - r-plyr >=1.8
     - r-reshape2 >=1.2.2
+    - r-rlang
     - r-stringi
     - r-stringr >=1.0
     - r-tidyr >=0.3.1
@@ -46,6 +48,7 @@ requirements:
     - r-lazyeval >=0.1.0
     - r-plyr >=1.8
     - r-reshape2 >=1.2.2
+    - r-rlang
     - r-stringi
     - r-stringr >=1.0
     - r-tidyr >=0.3.1
