@@ -1,4 +1,4 @@
-{% set version = "2.4.6" %}
+{% set version = "2.4.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RNeXML_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RNeXML/RNeXML_{{ version }}.tar.gz
-  sha256: 9a1db4424bf86170311aaf1c00f099442d9e1592afb007cbe8bb02f4585ea64c
+  sha256: cb311d6dda33a95521a6df360a2d2f4e6d6bc6b330ac5e19ea721ca665bce6fe
 
 build:
   merge_build_host: true  # [win]
