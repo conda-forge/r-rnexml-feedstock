@@ -1,11 +1,11 @@
-About r-rnexml
-==============
+About r-rnexml-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rnexml-feedstock/blob/main/LICENSE.txt)
 
 Home: https://docs.ropensci.org/RNeXML, https://github.com/ropensci/RNeXML
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rnexml-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides access to phyloinformatic data in 'NeXML' format.  The package should add new functionality to R such as the possibility to manipulate 'NeXML' objects in more various and refined way and compatibility with 'ape' objects.
 
